@@ -28,7 +28,7 @@ export default function HeroSection() {
       {/* HERO BACKGROUND */}
       <div className="relative min-h-[680px] w-full overflow-hidden sm:min-h-[720px] lg:min-h-[760px] min-[1920px]:min-h-[850px] min-[2560px]:min-h-[980px]">
         <Image
-          src="/images/baanchris.jpg"
+          src="/images/hero-main.jpg"
           alt="Chris's House บ้านคริส อยุธยา"
           fill
           priority
