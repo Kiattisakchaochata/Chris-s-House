@@ -41,7 +41,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#1B1009]/50 via-transparent to-[#1B1009]/10" />
 
         {/* HERO CONTENT */}
-        <div className="relative z-10 mx-auto flex min-h-[680px] max-w-7xl items-start px-6 pb-44 pt-44 sm:min-h-[720px] sm:items-center sm:px-10 sm:pb-44 sm:pt-32 lg:min-h-[760px] lg:pt-20 lg:pb-44 min-[1920px]:min-h-[850px] min-[1920px]:max-w-[1680px] min-[2560px]:min-h-[980px] min-[2560px]:max-w-[2100px]">
+        <div className="relative z-10 mx-auto flex min-h-[680px] max-w-7xl items-start px-6 pb-44 pt-32 sm:min-h-[720px] sm:items-center sm:px-10 sm:pb-44 sm:pt-32 lg:min-h-[760px] lg:pt-20 lg:pb-44 min-[1920px]:min-h-[850px] min-[1920px]:max-w-[1680px] min-[2560px]:min-h-[980px] min-[2560px]:max-w-[2100px]">
           <div className="max-w-2xl text-[#FFF8EE] min-[1920px]:max-w-4xl">
             <p className="mb-5 text-[10px] font-medium tracking-[0.18em] text-[#E2C79B] sm:text-sm sm:tracking-[0.32em]">
               WARMTH • TASTE • MEMORIES
