@@ -91,12 +91,20 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setOpen((prev) => !prev)}
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-[#C49A5A]/30 bg-[#C49A5A]/10 text-xl text-[#F8F3EB] transition hover:bg-[#C49A5A]/20 lg:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-[#E2C79B]/60 bg-[#2D1B12]/75 text-[#FFF8EE] shadow-md backdrop-blur-md transition hover:bg-[#6B3F20] lg:hidden"
             aria-label={open ? "ปิดเมนู" : "เปิดเมนู"}
             aria-expanded={open}
             aria-controls="mobile-navigation"
           >
-            {open ? "✕" : "☰"}
+            {open ? (
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="h-5 w-5">
+                  <path d="M6 6l12 12M18 6L6 18" />
+                </svg>
+              ) : (
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="h-5 w-5">
+                  <path d="M4 7h16M4 12h16M4 17h16" />
+                </svg>
+              )}
           </button>
         </div>
       </div>
@@ -105,11 +113,11 @@ export default function Navbar() {
       {open && (
         <div
           id="mobile-navigation"
-          className="border-t border-[#C49A5A]/20 bg-[#2D1B12] lg:hidden"
+          className="absolute inset-x-4 top-full mt-2 overflow-hidden rounded-2xl border border-[#C49A5A]/35 bg-[#2D1B12]/98 shadow-[0_20px_50px_rgba(20,10,5,0.35)] backdrop-blur-xl sm:inset-x-8 lg:hidden"
         >
           <nav
             aria-label="เมนูมือถือ"
-            className="mx-auto flex max-w-7xl flex-col gap-1 px-5 py-5"
+            className="mx-auto flex max-w-7xl flex-col gap-1 p-3 sm:p-4"
           >
             {navItems.map((item) => {
               const isActive = pathname === item.href;
@@ -121,7 +129,7 @@ export default function Navbar() {
                   onClick={() => setOpen(false)}
                   aria-current={isActive ? "page" : undefined}
                   className={[
-                    "rounded-xl px-4 py-3 text-sm font-medium transition-colors",
+                    "block rounded-xl px-4 py-2.5 text-sm font-medium transition-colors",
                     isActive
                       ? "bg-[#C49A5A]/20 text-[#F8F3EB]"
                       : "text-[#E9DCC9] hover:bg-[#C49A5A]/10",
@@ -135,7 +143,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               onClick={() => setOpen(false)}
-              className="mt-4 rounded-full bg-[#8B5A35] px-5 py-3 text-center text-sm font-bold text-white transition hover:bg-[#A56C3B]"
+              className="mt-2 rounded-xl border border-[#C49A5A]/40 bg-[#8B5A35] px-5 py-3 text-center text-sm font-bold text-[#FFF8EE] transition hover:bg-[#A56C3B]"
             >
               ✆ ติดต่อร้าน
             </Link>

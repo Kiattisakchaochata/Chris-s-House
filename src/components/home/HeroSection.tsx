@@ -41,9 +41,9 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#1B1009]/50 via-transparent to-[#1B1009]/10" />
 
         {/* HERO CONTENT */}
-        <div className="relative z-10 mx-auto flex min-h-[680px] max-w-7xl items-center px-6 pb-48 pt-20 sm:min-h-[720px] sm:px-10 lg:min-h-[760px] lg:pb-44 min-[1920px]:min-h-[850px] min-[1920px]:max-w-[1680px] min-[2560px]:min-h-[980px] min-[2560px]:max-w-[2100px]">
+        <div className="relative z-10 mx-auto flex min-h-[680px] max-w-7xl items-start px-6 pb-44 pt-44 sm:min-h-[720px] sm:items-center sm:px-10 sm:pb-44 sm:pt-32 lg:min-h-[760px] lg:pt-20 lg:pb-44 min-[1920px]:min-h-[850px] min-[1920px]:max-w-[1680px] min-[2560px]:min-h-[980px] min-[2560px]:max-w-[2100px]">
           <div className="max-w-2xl text-[#FFF8EE] min-[1920px]:max-w-4xl">
-            <p className="mb-5 text-xs font-medium tracking-[0.32em] text-[#E2C79B] sm:text-sm">
+            <p className="mb-5 text-[10px] font-medium tracking-[0.18em] text-[#E2C79B] sm:text-sm sm:tracking-[0.32em]">
               WARMTH • TASTE • MEMORIES
             </p>
 
@@ -66,7 +66,22 @@ export default function HeroSection() {
                 href="/menu"
                 className="inline-flex items-center justify-center gap-3 rounded-full border border-[#D9B57A]/40 bg-[#8B5A35] px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#A56C3B] sm:text-base"
               >
-                <span aria-hidden="true">♨</span>
+                <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-5 w-5 shrink-0 text-[#FFF8EE]"
+                  >
+                    <path d="M4 10h16l-1.5 7H5.5L4 10Z" />
+                    <path d="M3 20h18" />
+                    <path d="M8 7c-2-2 2-3 0-5" />
+                    <path d="M13 7c-2-2 2-3 0-5" />
+                    <path d="M18 7c-2-2 2-3 0-5" />
+                  </svg>
                 ดูเมนูอาหาร
               </Link>
 
